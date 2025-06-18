@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&family=Nunito+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-coal: 17 19 20;
+    --color-gold: 212 175 55;
+    --color-ivory: 246 245 242;
+    --color-mocha: 96 75 58;
+    --color-sapphire: 43 92 155;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-coal text-ivory/90;
+  }
+
+  ::selection {
+    @apply bg-gold text-coal;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-sapphire ring-offset-2 ring-offset-coal;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold text-coal font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:brightness-[88%] focus-visible:ring-2 focus-visible:ring-sapphire focus-visible:ring-offset-2 focus-visible:ring-offset-coal;
+  }
+
+  .btn-secondary {
+    @apply bg-mocha text-ivory font-medium px-6 py-3 rounded-lg transition-all duration-200 hover:bg-mocha/80 focus-visible:ring-2 focus-visible:ring-sapphire focus-visible:ring-offset-2 focus-visible:ring-offset-coal;
+  }
+
+  .card {
+    @apply bg-ivory rounded-lg shadow-inner-coal transition-transform duration-300 hover:-translate-y-1 hover:ring-1 hover:ring-gold;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-gold via-yellow-300 to-gold bg-clip-text text-transparent;
+  }
+
+  .hero-gradient {
+    @apply bg-gradient-to-b from-black/70 to-coal;
+  }
+}
+
+@layer utilities {
+  .animate-smooth {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .motion-reduce\:animate-none {
+      animation: none !important;
+    }
+    
+    .motion-reduce\:transition-none {
+      transition: none !important;
+    }
+  }
+}
