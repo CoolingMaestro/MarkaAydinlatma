@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marka Aydınlatma | Premium Aydınlatma Çözümleri</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+        
+        :root {
+            --coal: #111314;
+            --gold: #D4AF37;
+            --ivory: #F6F5F2;
+            --mocha: #604B3A;
+            --sapphire: #2B5C9B;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--coal);
+            color: var(--ivory);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            background: linear-gradient(to right, var(--gold), #FFD700, var(--gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+        
+        .status {
+            background-color: var(--ivory);
+            color: var(--coal);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .status h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--mocha);
+            margin-bottom: 1rem;
+        }
+        
+        .files {
+            text-align: left;
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: rgba(17, 19, 20, 0.05);
+            border-radius: 8px;
+        }
+        
+        .files h3 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+        
+        .files ul {
+            list-style: none;
+            padding-left: 1rem;
+        }
+        
+        .files li {
+            padding: 0.25rem 0;
+            color: var(--coal);
+            opacity: 0.8;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--gold);
+            color: var(--coal);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: filter 0.2s;
+        }
+        
+        .btn:hover {
+            filter: brightness(88%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Marka Aydınlatma</h1>
+        <p style="opacity: 0.8; margin-bottom: 2rem;">Premium Aydınlatma Çözümleri</p>
+        
+        <div class="status">
+            <h2>✨ Proje Başarıyla Oluşturuldu!</h2>
+            
+            <p style="margin-bottom: 1rem;">Next.js tabanlı e-ticaret siteniz hazır. Aşağıdaki dosyalar oluşturuldu:</p>
+            
+            <div class="files">
+                <h3>📁 Sayfa Yapısı:</h3>
+                <ul>
+                    <li>• Ana sayfa (Hero banner, öne çıkan ürünler)</li>
+                    <li>• Ürünler sayfası (Filtreleme ve sıralama)</li>
+                    <li>• Ürün detay sayfası (Galeri, sepete ekleme)</li>
+                </ul>
+            </div>
+            
+            <div class="files">
+                <h3>🎨 Tasarım Özellikleri:</h3>
+                <ul>
+                    <li>• Kömür (#111314) ana arka plan</li>
+                    <li>• Altın (#D4AF37) vurgu renkleri</li>
+                    <li>• Responsive tasarım</li>
+                    <li>• Erişilebilirlik desteği</li>
+                    <li>• Smooth animasyonlar</li>
+                </ul>
+            </div>
+            
+            <div class="files">
+                <h3>🛠️ Teknik Özellikler:</h3>
+                <ul>
+                    <li>• Next.js 14 App Router</li>
+                    <li>• TypeScript</li>
+                    <li>• Tailwind CSS</li>
+                    <li>• React Icons</li>
+                    <li>• SEO optimizasyonu</li>
+                </ul>
+            </div>
+            
+            <p style="margin-top: 1.5rem; color: var(--mocha); font-weight: 500;">
+                Geliştirme sunucusunu başlatmak için terminalde <code style="background: rgba(96, 75, 58, 0.1); padding: 2px 6px; border-radius: 4px;">npm install && npm run dev</code> komutunu çalıştırın.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
